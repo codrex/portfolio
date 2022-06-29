@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.App {
+.App, html, body, #root {
   font-family: sans-serif;
   text-align: center;
+  height: 100%;
 }
