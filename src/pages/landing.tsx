@@ -8,7 +8,7 @@ const content = {
   profile: {
     name: "Rex Ogbemudia",
     workAt: "Andela",
-    location: "Lagos, Nigeria",
+    location: "Lagos",
     role: "Web developer"
   }
 }
@@ -19,12 +19,12 @@ const H1Styled = styled(H1)`
 
 export function Landing() {
   return (
-    <div className="px-16 flex flex-col h-full">
+    <div className="lg:px-16 px-6 flex flex-col h-full">
       <Nav {...content.profile}/>
-      <div className="flex mt-14 flex-col justify-between flex-1">
-      <div className="flex mt-14 flex-col">
-        <H1 className="uppercase w-full max-w-lg">{content.profile.role}</H1>
-        <div className="h-96 bg-slate-400 w-8/12 mt-3">
+      <div className="flex md:mt-14 flex-col justify-between flex-1">
+      <div className="flex md:mt-14 flex-col">
+        <H1 className="uppercase w-full max-w[600px] break-word">{content.profile.role}</H1>
+        <div className="h-96 bg-slate-400 w-full max-w-[1100px] mt-3">
           <img />
         </div>
       </div>
